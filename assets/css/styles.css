@@ -1,0 +1,91 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 65.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 32rem;
+  height: 42rem;
+  background-color: #2d4559;
+  color: white;
+  padding: 7rem 3rem;
+  position: relative;
+  box-shadow: 0px 0px 15px 0px rgba(233, 150, 128, 0.68);
+  border-radius: 1rem;
+}
+.logo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -5rem;
+  left: calc(50% - 5rem);
+}
+
+.container h1 {
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+.container label {
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.container input {
+  width: 100%;
+  margin: 1rem 0;
+}
+.container input:not([type="submit"]) {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+.container input[type="submit"] {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #fdddbe;
+  color: #2d4559;
+  height: 3rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+.container input[type="submit"]:hover {
+  background-color: #e99680;
+}
+.container a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: darkgray;
+}
+.container a:hover {
+  color: #fdddbe;
+}
+.link {
+  display: flex;
+}

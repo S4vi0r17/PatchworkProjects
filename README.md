@@ -1,7 +1,17 @@
-# login
+# PatchworkProjects
 
 <p align="center">
-    <img src="assets/img/mockup.png" alt="imagen" width="auto">
+    <img src="./mockup.png" width="auto">
 </p>
 
-**You can visit it**  [here](#login).
+<p align="center">
+    <img src="./img/bicifisi.png" width="auto">
+</p>
+
+<p align="center">
+    <img src="./img/gg.png" width="auto">
+</p>
+
+<p align="center">
+    <img src="./img/hacker.png" width="auto">
+</p>

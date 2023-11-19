@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BICIFISI</title>
+  <meta name="description" content="Sitio web de BICIFISI - Alquiler de bicicletas">
+  <meta name="author" content="Eder Benites">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo (1).png" alt="Logo de BICIFISI">
+    </div>
+    <h1>BICIFISI</h1>
+  </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="#servicios">Sobre Nosotros</a></li>
+      <li><a href="#tarifas">Tarifas</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#ubicacion">Ubicación e Integrantes</a></li>
+    </ul>
+  </nav>
+
+  <section id="servicios">
+    <div class="contenido">
+      <h2 class="quienes-somos-titulo">¿Quienes somos?</h2>
+      <div class="quienes-somos">
+        <p>El equipo de BISIFISI está formado por un grupo de estudiantes de la carrera de ingeniería de sistemas
+          apasionados por la tecnología y comprometidos con el medio ambiente. Nuestra visión es contribuir a un futuro
+          más sostenible y saludable para todos. Creemos que el alquiler de bicicletas es una forma de promover la
+          actividad física, reducir la contaminación y combatir el cambio climático. En BISIFISI estamos orgullosos de
+          hacer nuestra parte para construir un mundo mejor.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="tarifas">
+    <h2>Tarifas</h2>
+    <div class="row">
+      <div class="column">
+        <div class="bike-card">
+          <img src="img/road-bike.jpg.png" alt="Bicicleta de paseo">
+          <div class="bike-info">
+            <p class="bike-price">S/.3.00 - hora</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bike-card">
+          <img src="img/mountain-bike.jpg.jpg" alt="Bicicleta montañera">
+          <div class="bike-info">
+            <p class="bike-price">S/.5.00 - hora</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bike-card">
+          <img src="img/electric-bike.jpg.png" alt="Bicicleta eléctrica">
+          <div class="bike-info">
+            <p class="bike-price">S/.7.00 - hora</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="reservas">
+    <h2>Reservas</h2>
+    <p>Para reservar una bicicleta, complete el formulario a continuación:</p>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <br>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+      <br>
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required>
+      <br>
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+      <br>
+      <label for="duracion">Duración (en horas):</label>
+      <input type="number" id="duracion" name="duracion" min="1" max="24" required>
+      <br>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+  <section id="bicicletas">
+    <h2>Nuestras Bicicletas</h2>
+    
+    <!-- Galería de imágenes -->
+    <div class="bike-gallery">
+    </div>
+
+  </section>
+
+  <section id="ubicacion">
+    <h2>Ubicación del servicio de alquiler de bicicletas</h2>
+    <div class="contenido" style="text-align: center;">
+      <p>Tenemos múltiples puntos de alquiler disponibles en cada entrada de la universidad. Nunca fue tan fácil y
+        conveniente disfrutar de un paseo en bicicleta mientras te trasladas de un lugar a otro en la universidad.
+        ¡Alquila una bicicleta hoy mismo y comienza a disfrutar de la libertad de moverte por la universidad sin
+        preocupaciones!</p>
+    </div>
+  </section>
+
+
+
+
+  <section class="founders">
+    <h2>Integrantes</h2>
+    <div class="founders-container">
+      <div class="founder">
+        <img src="img/Austin.webp" alt="Fundador 1" class="founder-img">
+        <img src="img/zava.jpg" alt="Fundador 1 - Hover" class="founder-img-hover">
+        <h3>Zavaleta</h3>
+        <p>Vago, pero quiere ser tercio</p>
+      </div>
+      <div class="founder">
+        <img src="img/pablo.webp" alt="Fundador 2" class="founder-img">
+        <img src="img/leo.jpg" alt="Fundador 2 - Hover" class="founder-img-hover">
+        <h3>Leonardo</h3>
+        <p>No le gusta química</p>
+      </div>
+      <div class="founder">
+        <img src="img/Tasha.webp" alt="Fundador 3" class="founder-img">
+        <img src="img/mott.jpg" alt="Fundador 3 - Hover" class="founder-img-hover">
+        <h3>Motta</h3>
+        <p>Motta es motta</p>
+      </div>
+      <div class="founder">
+        <img src="img/Uniqua.webp" alt="Fundador 4" class="founder-img">
+        <img src="img/fran.png" alt="Fundador 4 - Hover" class="founder-img-hover">
+        <h3>Francis</h3>
+        <p>El loco chatGPT</p>
+      </div>
+      <div class="founder">
+        <img src="img/Tyrone.webp" alt="Fundador 5" class="founder-img">
+        <img src="img/io.png" alt="Fundador 5 - Hover" class="founder-img-hover">
+        <h3>Nacho</h3>
+        <p>Nunca está en las tareas grupales</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <p>Derechos de autor © 2023 Eder Benites. Todos los derechos reservados</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

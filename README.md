@@ -1,17 +1,21 @@
 # PatchworkProjects
 
-<p align="center">
+<div align="center">
     <img src="./mockup.png" width="auto">
-</p>
+</div>
 
-<p align="center">
+<div align="center">
     <img src="./img/bicifisi.png" width="auto">
-</p>
+</div>
 
-<p align="center">
+<div align="center">
     <img src="./img/gg.png" width="auto">
-</p>
+</div>
 
-<p align="center">
+<div align="center">
     <img src="./img/hacker.png" width="auto">
-</p>
+</div>
+
+<div align="center">
+    <img src="./img/portfolio.png" width="auto">
+</div>

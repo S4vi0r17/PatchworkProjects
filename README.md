@@ -1,7 +1,7 @@
 # PatchworkProjects
 
 <div align="center">
-    <img src="./mockup.png" width="auto">
+    <img src="./img/mockup.png" width="auto">
 </div>
 
 <div align="center">

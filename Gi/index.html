@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Greta</title>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="overlay">
+        <audio src="./Allison - No Hay Distancia.mp3"></audio>
+        <button id="button">
+          <i class="fas fa-volume-up"></i>
+        </button>
+      </div>
+      <div class="Picture-video" id="video">
+        <video
+          id="videoG"
+          autoplay
+          muted
+          class="Picture-img-video"
+          width="600"
+          height="450"
+          src="video/vid.mp4"
+        ></video>
+        <div class="Picture-note-video">
+          <span>Solo quería decir gracias. Disfruta de la música</span>
+        </div>
+      </div>
+      <!-- <div class="Picture">
+        <img class="Picture-img" src="images/1.jpg" alt="" />
+        <div class="Picture-note">
+          <span
+            >Foto de Spotify
+            <svg
+              width="32px"
+              height="32px"
+              viewBox="0 0 48 48"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>Spotify-color</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Icons"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Color-"
+                    transform="translate(-200.000000, -460.000000)"
+                    fill="#00DA5A"
+                  >
+                    <path
+                      d="M238.16,481.36 C230.48,476.8 217.64,476.32 210.32,478.6 C209.12,478.96 207.92,478.24 207.56,477.16 C207.2,475.96 207.92,474.76 209,474.4 C217.52,471.88 231.56,472.36 240.44,477.64 C241.52,478.24 241.88,479.68 241.28,480.76 C240.68,481.6 239.24,481.96 238.16,481.36 M237.92,488.08 C237.32,488.92 236.24,489.28 235.4,488.68 C228.92,484.72 219.08,483.52 211.52,485.92 C210.56,486.16 209.48,485.68 209.24,484.72 C209,483.76 209.48,482.68 210.44,482.44 C219.2,479.8 230,481.12 237.44,485.68 C238.16,486.04 238.52,487.24 237.92,488.08 M235.04,494.68 C234.56,495.4 233.72,495.64 233,495.16 C227.36,491.68 220.28,490.96 211.88,492.88 C211.04,493.12 210.32,492.52 210.08,491.8 C209.84,490.96 210.44,490.24 211.16,490 C220.28,487.96 228.2,488.8 234.44,492.64 C235.28,493 235.4,493.96 235.04,494.68 M224,460 C210.8,460 200,470.8 200,484 C200,497.2 210.8,508 224,508 C237.2,508 248,497.2 248,484 C248,470.8 237.32,460 224,460"
+                      id="Spotify"
+                    ></path>
+                  </g>
+                </g>
+              </g></svg
+          ></span>
+        </div>
+      </div>
+      <div class="Picture">
+        <img class="Picture-img" src="images/2.jpg" alt="" />
+        <div class="Picture-note">
+          <span
+            >Feria
+            <svg
+              width="32px"
+              height="32px"
+              viewBox="0 0 1024 1024"
+              class="icon"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M746.666667 362.666667h85.333333v533.333333h-85.333333zM192 362.666667h85.333333v533.333333H192z"
+                  fill="#F4511E"
+                ></path>
+                <path
+                  d="M320 192h85.333333v533.333333h-85.333333zM618.666667 192h85.333333v533.333333h-85.333333z"
+                  fill="#BF360C"
+                ></path>
+                <path
+                  d="M384 362.666667c0 36.266667 27.733333 64 64 64s64-27.733333 64-64h-128zM640 362.666667c0 36.266667 27.733333 64 64 64s64-27.733333 64-64h-128zM128 362.666667c0 36.266667 27.733333 64 64 64s64-27.733333 64-64H128z"
+                  fill="#039BE5"
+                ></path>
+                <path
+                  d="M405.333333 213.333333l-21.333333 149.333334h128v-149.333334zM618.666667 213.333333l21.333333 149.333334h128l-42.666667-149.333334zM192 213.333333l-64 149.333334h128l42.666667-149.333334z"
+                  fill="#4FC3F7"
+                ></path>
+                <path
+                  d="M512 213.333333v149.333334h128l-21.333333-149.333334zM725.333333 213.333333l42.666667 149.333334h128l-64-149.333334zM298.666667 213.333333l-42.666667 149.333334h128l21.333333-149.333334z"
+                  fill="#2196F3"
+                ></path>
+                <path
+                  d="M512 362.666667c0 36.266667 27.733333 64 64 64s64-27.733333 64-64h-128zM768 362.666667c0 36.266667 27.733333 64 64 64s64-27.733333 64-64h-128zM256 362.666667c0 36.266667 27.733333 64 64 64s64-27.733333 64-64h-128z"
+                  fill="#1976D2"
+                ></path>
+                <path
+                  d="M298.666667 128h-64c-23.466667 0-42.666667 19.2-42.666667 42.666667v42.666666h106.666667V128zM405.333333 128h106.666667v85.333333h-106.666667zM618.666667 128h106.666666v85.333333h-106.666666z"
+                  fill="#81D4FA"
+                ></path>
+                <path
+                  d="M298.666667 128h106.666666v85.333333h-106.666666zM512 128h106.666667v85.333333h-106.666667zM789.333333 128h-64v85.333333h106.666667V170.666667c0-23.466667-19.2-42.666667-42.666667-42.666667z"
+                  fill="#64B5F6"
+                ></path>
+              </g></svg
+          ></span>
+        </div>
+      </div>
+      <div class="Picture">
+        <img class="Picture-img" src="images/3.jpg" alt="" />
+        <div class="Picture-note">
+          <span
+            >Perro celoso
+            <svg
+              fill="#d6b196"
+              width="32px"
+              height="32px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M21.174,5.219a2.821,2.821,0,0,1-3.55,4.348L9.567,17.624a2.821,2.821,0,0,1-4.348,3.55,2.791,2.791,0,0,1-.788-1.605,2.791,2.791,0,0,1-1.6-.788,2.821,2.821,0,0,1,3.55-4.348l8.057-8.057a2.821,2.821,0,0,1,4.348-3.55,2.791,2.791,0,0,1,.788,1.605A2.791,2.791,0,0,1,21.174,5.219Zm-3.55,9.214-1.019-1.019-3.191,3.191,1.019,1.019a2.821,2.821,0,0,0,4.348,3.55,2.791,2.791,0,0,0,.788-1.605,2.791,2.791,0,0,0,1.605-.788,2.821,2.821,0,0,0-3.55-4.348ZM6.376,9.567,7.4,10.586,10.586,7.4,9.567,6.376a2.821,2.821,0,0,0-4.348-3.55,2.791,2.791,0,0,0-.788,1.605,2.791,2.791,0,0,0-1.6.788,2.821,2.821,0,0,0,3.55,4.348Z"
+                ></path>
+              </g></svg
+          ></span>
+        </div>
+      </div>
+      <div class="Picture">
+        <img class="Picture-img" src="images/4.jpg" alt="" />
+        <div class="Picture-note">
+          <span
+            >Salida lluviosa
+            <svg
+              fill="#000000"
+              width="32px"
+              height="32px"
+              viewBox="0 0 24 24"
+              id="rain-alt"
+              data-name="Line Color"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon line-color"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="secondary"
+                  d="M6,17,5,19m5-2L8,21m6-4-1,2m5-2-2,4"
+                  style="
+                    fill: none;
+                    stroke: #2ca9bc;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2;
+                  "
+                ></path>
+                <path
+                  id="primary"
+                  d="M21,9a4,4,0,0,1-4,4H6A3,3,0,1,1,7.08,7.21a5,5,0,0,1,9-2.09A4.08,4.08,0,0,1,17,5,4,4,0,0,1,21,9Z"
+                  style="
+                    fill: none;
+                    stroke: #000000;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2;
+                  "
+                ></path>
+              </g></svg
+          ></span>
+        </div>
+      </div>
+      <div class="Picture">
+        <img class="Picture-img" src="images/5.jpg" alt="" />
+        <div class="Picture-note"><span>Jugo 🥤</span></div>
+      </div>
+      <div class="Picture">
+        <img class="Picture-img" src="images/6.jpg" alt="" />
+        <div class="Picture-note"><span>Intentando sacar fotos 📸</span></div>
+      </div>
+      <div class="Picture">
+        <img class="Picture-img" src="images/8.jpg" alt="" />
+        <div class="Picture-note"><span>Caras de enfermos 🥴</span></div>
+      </div>
+      <div class="Picture">
+        <img class="Picture-img" src="images/9.jpg" alt="" />
+        <div class="Picture-note">
+          <span
+            >Cuando fuimos al cine
+            <svg
+              width="32px"
+              height="32px"
+              viewBox="0 0 64 64"
+              data-name="Lovely Valentine's day"
+              id="Lovely_Valentine_s_day"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #e29e9a;
+                    }
+                    .cls-2 {
+                      fill: #f6e3a6;
+                    }
+                    .cls-3 {
+                      fill: #623905;
+                    }
+                    .cls-4 {
+                      fill: #fff0cc;
+                    }
+                    .cls-5 {
+                      fill: #268484;
+                    }
+                    .cls-6 {
+                      fill: #842835;
+                    }
+                  </style>
+                </defs>
+                <title></title>
+                <circle class="cls-1" cx="32" cy="32" r="28"></circle>
+                <rect
+                  class="cls-2"
+                  height="22"
+                  rx="2"
+                  width="26"
+                  x="13"
+                  y="29"
+                ></rect>
+                <path
+                  class="cls-3"
+                  d="M37,52H15a3,3,0,0,1-3-3V31a3,3,0,0,1,3-3H37a3,3,0,0,1,3,3V49A3,3,0,0,1,37,52ZM15,30a1,1,0,0,0-1,1V49a1,1,0,0,0,1,1H37a1,1,0,0,0,1-1V31a1,1,0,0,0-1-1Z"
+                ></path>
+                <rect
+                  class="cls-4"
+                  height="18"
+                  rx="2"
+                  transform="translate(66 14) rotate(90)"
+                  width="14"
+                  x="19"
+                  y="31"
+                ></rect>
+                <rect class="cls-5" height="10" width="4" x="39" y="35"></rect>
+                <path class="cls-3" d="M44,46H38V34h6Zm-4-2h2V36H40Z"></path>
+                <path
+                  class="cls-2"
+                  d="M48.671,50.041,43,45V35l5.772-4.489A2,2,0,0,1,52,32.089V48.546A2,2,0,0,1,48.671,50.041Z"
+                ></path>
+                <path
+                  class="cls-3"
+                  d="M49.989,51.552a2.97,2.97,0,0,1-1.982-.764L42,45.449V34.511l6.158-4.789A3,3,0,0,1,53,32.089V48.546a2.968,2.968,0,0,1-1.771,2.737A3.017,3.017,0,0,1,49.989,51.552Zm-.654-2.258A1,1,0,0,0,51,48.546V32.089a1,1,0,0,0-1.613-.789L44,35.489v9.062Z"
+                ></path>
+                <circle class="cls-5" cx="20" cy="21" r="8"></circle>
+                <path
+                  class="cls-3"
+                  d="M20,30a9,9,0,1,1,9-9A9.01,9.01,0,0,1,20,30Zm0-16a7,7,0,1,0,7,7A7.009,7.009,0,0,0,20,14Z"
+                ></path>
+                <circle class="cls-5" cx="20" cy="21" r="5"></circle>
+                <path
+                  class="cls-3"
+                  d="M20,27a6,6,0,1,1,6-6A6.006,6.006,0,0,1,20,27Zm0-10a4,4,0,1,0,4,4A4,4,0,0,0,20,17Z"
+                ></path>
+                <circle class="cls-5" cx="34" cy="23" r="6"></circle>
+                <path
+                  class="cls-3"
+                  d="M34,30a7,7,0,1,1,7-7A7.009,7.009,0,0,1,34,30Zm0-12a5,5,0,1,0,5,5A5.006,5.006,0,0,0,34,18Z"
+                ></path>
+                <circle class="cls-5" cx="34" cy="23" r="3"></circle>
+                <path
+                  class="cls-3"
+                  d="M34,27a4,4,0,1,1,4-4A4,4,0,0,1,34,27Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,34,21Z"
+                ></path>
+                <path
+                  class="cls-6"
+                  d="M21.081,38.609a2.569,2.569,0,0,0,.766,1.844L23.692,42.3l1.9,1.9a1.3,1.3,0,0,0,1.846,0l1.9-1.9,1.743-1.744a2.708,2.708,0,0,0,.387-3.454,2.612,2.612,0,0,0-3.975-.336l-.975.974-.861-.861a2.737,2.737,0,0,0-3.3-.5A2.573,2.573,0,0,0,21.081,38.609Z"
+                ></path>
+                <path
+                  class="cls-3"
+                  d="M26.512,45.583a2.287,2.287,0,0,1-1.632-.677L21.14,41.16a3.6,3.6,0,0,1,.7-5.642,3.706,3.706,0,0,1,4.519.652l.155.154.267-.267a3.611,3.611,0,0,1,5.494.459,3.718,3.718,0,0,1-.491,4.746l-3.638,3.644A2.288,2.288,0,0,1,26.512,45.583Zm-2.875-8.556a1.509,1.509,0,0,0-.773.206,1.6,1.6,0,0,0-.316,2.507L26.3,43.494a.266.266,0,0,0,.431,0l3.64-3.646a1.7,1.7,0,0,0,.282-2.164,1.607,1.607,0,0,0-1.187-.679,1.644,1.644,0,0,0-1.27.466l-.974.974a1,1,0,0,1-1.414,0l-.862-.861A1.869,1.869,0,0,0,23.637,37.027Z"
+                ></path>
+              </g></svg
+          ></span>
+        </div>
+      </div>
+      <div class="Picture">
+        <img class="Picture-img" src="images/10.jpg" />
+        <div class="Picture-note"><span>El gato con botas 🐈</span></div>
+      </div>
+      <div class="Picture">
+        <img class="Picture-img" src="images/11.png" />
+        <div class="Picture-note">
+          <span
+            >La foto de Pinterest
+            <svg
+              width="32px"
+              height="32px"
+              viewBox="0 0 48 48"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>Pinterest-color</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Icons"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Color-"
+                    transform="translate(-300.000000, -260.000000)"
+                    fill="#CC2127"
+                  >
+                    <path
+                      d="M324.001411,260 C310.747575,260 300,270.744752 300,284.001411 C300,293.826072 305.910037,302.270594 314.368672,305.982007 C314.300935,304.308344 314.357382,302.293173 314.78356,300.469924 C315.246428,298.522491 317.871229,287.393897 317.871229,287.393897 C317.871229,287.393897 317.106368,285.861351 317.106368,283.59499 C317.106368,280.038808 319.169518,277.38296 321.73505,277.38296 C323.91674,277.38296 324.972306,279.022755 324.972306,280.987123 C324.972306,283.180102 323.572411,286.462515 322.852708,289.502205 C322.251543,292.050803 324.128418,294.125243 326.640325,294.125243 C331.187158,294.125243 334.249427,288.285765 334.249427,281.36532 C334.249427,276.10725 330.707356,272.170048 324.263891,272.170048 C316.985006,272.170048 312.449462,277.59746 312.449462,283.659905 C312.449462,285.754101 313.064738,287.227377 314.029988,288.367613 C314.475922,288.895396 314.535191,289.104251 314.374316,289.708238 C314.261422,290.145705 313.996119,291.21256 313.886047,291.633092 C313.725172,292.239901 313.23408,292.460046 312.686541,292.234256 C309.330746,290.865408 307.769977,287.193509 307.769977,283.064385 C307.769977,276.248368 313.519139,268.069148 324.921503,268.069148 C334.085729,268.069148 340.117128,274.704533 340.117128,281.819721 C340.117128,291.235138 334.884459,298.268478 327.165285,298.268478 C324.577174,298.268478 322.138649,296.868584 321.303228,295.279591 C321.303228,295.279591 319.908979,300.808608 319.615452,301.875463 C319.107426,303.724114 318.111131,305.575587 317.199506,307.014994 C319.358617,307.652849 321.63909,308 324.001411,308 C337.255248,308 348,297.255248 348,284.001411 C348,270.744752 337.255248,260 324.001411,260"
+                      id="Pinterest"
+                    ></path>
+                  </g>
+                </g>
+              </g></svg
+          ></span>
+        </div>
+      </div> -->
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

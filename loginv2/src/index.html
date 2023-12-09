@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login V2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body
+    class="h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ..."
+  >
+    <div class="rounded-3xl w-1/2 h-[500px] flex m-2.5">
+      <div
+        class="w-2/5 flex flex-col items-center justify-center bg-pink-400 rounded-l-3xl"
+      >
+        <div class="w-full ps-8 pe-8 text-center">
+          <h2 class="text-4xl text-white">Welcome</h2>
+          <p class="py-4 text-[#f8f8f8]">to join our community log in</p>
+          <input class="bg-transparent border-white rounded-2xl outline-none border-2 py-3 px-6 cursor-pointer transition-all ease-linear hover:bg-white hover:text-black text-white" type="button" value="Log In" />
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center text-center w-3/5 bg-[#f8f8f8] rounded-e-3xl px-8">
+        <div class="my-4">
+          <h2 class="text-4xl">Create an account</h2>
+          <i class="rounded-full p-4 cursor-pointer mx-3 text-[#9191bd] transition-all ease-linear hover:bg-pink-300 hover:text-white bx bxl-google"></i>
+          <i class="rounded-full p-4 cursor-pointer mx-3 text-[#9191bd] transition-all ease-linear hover:bg-pink-300 hover:text-white bx bxl-github"></i>
+          <i class="rounded-full p-4 cursor-pointer mx-3 text-[#9191bd] transition-all ease-linear hover:bg-pink-300 hover:text-white bx bxl-linkedin"></i>
+        </div>
+        <p class="text-[#555]">or use your email for registration</p>
+
+        <form class="mt-7">
+          <label class="flex items-center mb-3 rounded-3xl px-3 bg-white" for="">
+            <i class="text-[#a7a7a7] bx bx-user"></i>
+            <input class="w-full p-3 border-none outline-none rounded-3xl text-[#333]" type="text" placeholder="enter your full name" />
+          </label>
+          <label class="flex items-center mb-3 rounded-3xl px-3 bg-white" for="">
+            <i class="text-[#a7a7a7] bx bx-envelope"></i>
+            <input class="w-full p-3 border-none outline-none rounded-3xl text-[#333]" type="email" placeholder="enter your email" />
+          </label>
+          <label class="flex items-center mb-3 rounded-3xl px-3 bg-white" for="">
+            <i class="text-[#a7a7a7] bx bx-lock-alt"></i>
+            <input class="w-full p-3 border-none outline-none rounded-3xl text-[#333]" type="password" placeholder="enter your password" />
+          </label>
+          <input class="bg-pink-300 text-white border-none py-3 px-4 cursor-pointer mt-3 rounded-3xl transition-all ease-linear hover:bg-pink-200" type="submit" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

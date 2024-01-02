@@ -1,5 +1,5 @@
 .contenedor-audio {
-    background: url("./assets/paisaje-magenta-naturaleza-fantasia.jpg");
+    background: url("./build/img/paisaje-magenta-naturaleza-fantasia.webp");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;

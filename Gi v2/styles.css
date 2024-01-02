@@ -1,5 +1,5 @@
-body {
-    background: url(https://images.unsplash.com/photo-1526500141527-9e9b0ae48227?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+.contenedor-audio {
+    background: url("./assets/paisaje-magenta-naturaleza-fantasia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -7,13 +7,13 @@ body {
     margin: 0;
 }
 
-audio {
+.contenedor-audio audio {
     display: none;
 }
 
-p {
+.contenedor-audio a {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -21,7 +21,11 @@ p {
     font-size: 20px;
 }
 
-button {
+.contenedor-audio a:hover {
+    color: rgba(238, 238, 238, 1);
+}
+
+.contenedor-audio button {
     font-size: 16px;
     color: #eee;
     position: absolute;
@@ -34,7 +38,7 @@ button {
     border: none;
     border-radius: 2px;
     outline: none;
-    background: rgba(115, 67, 167, 0.8);
+    background: #ae4f6d;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     opacity: 0.8;
     cursor: pointer;
@@ -44,13 +48,97 @@ button {
     align-items: center;
 }
 
-button.fade:hover {
+.contenedor-audio button:hover {
+    background-color: #d34c77;
+}
+
+.contenedor-audio button.fade:hover {
     opacity: 0.8;
 }
 
-.fade {
+.contenedor-audio .fade {
     opacity: 0.2;
     top: 0;
     left: 0;
     transform: translate(0, 0);
 }
+
+.hidde {
+    display: none;
+}
+
+/* cards */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Martian Mono", monospace;
+    overflow: hidden;
+  }
+  
+  /* Otros estilos */
+  
+  .Container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .Picture-video {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    user-select: none;
+  }
+  
+  .Picture-note-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .Picture {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%);
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .Picture-img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    pointer-events: none;
+    object-fit: cover;
+  }
+  
+  .Picture-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 70px;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  

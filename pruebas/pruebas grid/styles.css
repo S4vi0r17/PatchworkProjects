@@ -1,0 +1,40 @@
+.container{
+  width: 80vw;
+  height: 50vw;
+  background-color: rgb(111, 111, 111);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(2, 200px);
+  justify-content: space-between;
+  justify-content: space-around;
+
+  align-content: center;
+  align-content: space-around;
+}
+
+.item{
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.caja-1 {
+  background-color:rgb(116, 251, 251);
+}
+
+.caja-2 {
+  background-color:rgb(255, 255, 255);
+}
+.caja-3 {
+  background-color:black;
+  color: white;
+}
+.caja-4 {
+  background-color:rgb(220, 162, 85);
+  color: white;
+}
+.caja-5 {
+  background-color: rgb(14, 218, 143);
+  color: white;
+}

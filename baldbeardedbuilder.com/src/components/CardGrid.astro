@@ -1,0 +1,49 @@
+---
+import BlogCard from "./Cards/BlogCard.astro";
+
+---
+
+<section>
+	<div class="container">
+		<BlogCard classes="card" />
+		<BlogCard classes="card" />
+		<BlogCard classes="card" />
+	</div>
+</section>
+
+<style>
+	section {
+		margin: 3rem 0;
+		padding: 0 2rem;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	@media (min-width: 640px) /* sm */ {
+		.container {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 768px) /* md */ {
+		.container {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 1024px) /* lg */ {
+		.container {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 1280px) /* xl */ {
+		.container {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+</style>
